@@ -10,6 +10,7 @@ High Concurrency skiplist base on c++11
 ## leveldb-skiplist使用方式
 
 ```c++
+#include "leveldb-skiplist/skiplist.h"
 // 定义排序方式
 using namespace utility::skiplist;
 struct Comparator {
@@ -69,6 +70,8 @@ iter.Prev()
 ## concurrent-skiplist使用方式
 
 ```c++
+#include "concurrent-skiplist/concurrent_skiplist.h"
+
 using namespace utility::skiplist;
 
 // 定义比较器
