@@ -5,7 +5,7 @@ High Concurrency skiplist base on c++11
 
 - 第一种是基于leveldb的跳表实现，由于leveldb中的跳表没有提供删除元素的接口，该项目源码中添加了删除的接口，同时将内存分配器改为tlsf算法，缓解频繁插入删除带来的内存碎片问题。
 - 第二种是folly库的concurretr_skiplist实现，原库中concurretr_skiplist需要依赖boost，且不支持c++11，该项目基于源码做了一些修改，主要是将依赖的boost中的函数重写，采用c++11支持的语法重构了部分代码（大部分为模板元编程）
-
+- simple_skiplist.cpp是个人实现的一个简单跳表，如果对跳表不熟悉，那么skiplist就是入门级的跳表实现代码，吃透它，leveldb的跳表就能够轻松上手。
 
 ## leveldb-skiplist使用方式
 
